@@ -10,5 +10,24 @@ import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
 
-
+    var character: AJDWCharacter? {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var wandLabel: UILabel!
+    @IBOutlet weak var houseLabel: UILabel!
+    @IBOutlet weak var bloodStatusLabel: UILabel!
+    
+    func updateViews() {
+        guard let character = character else { return }
+        nameLabel.text = character.name
+        wandLabel.text = character.wand
+        houseLabel.text = character.house
+        bloodStatusLabel.text = character.bloodStatus
+        
+        nameLabel.textColor = character.deathEater ? .red : .green
+    }
 }

@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="182" id="sT1-Nw-cXT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="characterCell" rowHeight="182" id="sT1-Nw-cXT" customClass="CharacterTableViewCell" customModule="HPOBJC_ClimbAfternoon_27" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="182"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sT1-Nw-cXT" id="SBk-Dr-7FF">
@@ -86,11 +86,18 @@
                                                 <constraint firstItem="KTU-pB-hyM" firstAttribute="centerX" secondItem="SBk-Dr-7FF" secondAttribute="centerX" id="0xy-Vg-bwn"/>
                                                 <constraint firstItem="Bko-El-Zps" firstAttribute="centerX" secondItem="SBk-Dr-7FF" secondAttribute="centerX" id="AsW-dO-ykG"/>
                                                 <constraint firstItem="dny-yD-5mo" firstAttribute="top" secondItem="Bko-El-Zps" secondAttribute="bottom" constant="22" id="GPt-vD-z8e"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dny-yD-5mo" secondAttribute="bottom" constant="21" id="HXT-4i-wCq"/>
                                                 <constraint firstItem="Bko-El-Zps" firstAttribute="top" secondItem="KTU-pB-hyM" secondAttribute="bottom" constant="20" id="W8F-Ty-NAK"/>
                                                 <constraint firstItem="KTU-pB-hyM" firstAttribute="top" secondItem="SBk-Dr-7FF" secondAttribute="topMargin" constant="20" id="XtH-J7-8zY"/>
                                                 <constraint firstItem="dny-yD-5mo" firstAttribute="centerX" secondItem="SBk-Dr-7FF" secondAttribute="centerX" id="bfi-lk-RKe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bloodStatusLabel" destination="Yc3-ye-jsM" id="uXS-nP-5cg"/>
+                                            <outlet property="houseLabel" destination="0xk-qi-3Ev" id="Jvk-vW-2Sj"/>
+                                            <outlet property="nameLabel" destination="KTU-pB-hyM" id="u7w-n2-CQG"/>
+                                            <outlet property="wandLabel" destination="HYv-vS-2sG" id="41e-Ho-pgo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -104,6 +111,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6bn-Rx-aD1"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="27Y-xg-Xa9" id="DxQ-KA-Yt6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJj-ly-2OF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @implementation AJDWCharacterController
 
 static NSString * const baseURLString = @"https://www.potterapi.com/v1/";
-static NSString * const characterString = @"character";
+static NSString * const characterString = @"characters";
 static NSString * const apieKeyString = @"key";
 static NSString * const apiKeyValue = @"$2a$10$yuEVIrB8CTLywFUQlbQnFuLutxdAW7Qt0LIz/pRuNr/lIVbs1S.2m";
 
@@ -42,7 +42,7 @@ static NSString * const apiKeyValue = @"$2a$10$yuEVIrB8CTLywFUQlbQnFuLutxdAW7Qt0
     NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:characterURL resolvingAgainstBaseURL:true];
     
     // Add query items to url
-    NSURLQueryItem *apiKey = [[NSURLQueryItem alloc] initWithName:apiKeyValue value:apiKeyValue];
+    NSURLQueryItem *apiKey = [[NSURLQueryItem alloc] initWithName:apieKeyString value:apiKeyValue];
     
     urlComponents.queryItems = @[apiKey];
     
@@ -59,7 +59,7 @@ static NSString * const apiKeyValue = @"$2a$10$yuEVIrB8CTLywFUQlbQnFuLutxdAW7Qt0
               return;
           }
           // Handle the data
-          if (!data) {
+          if (data) {
               // Serialize the json
               NSDictionary *topLevelDictionary = [NSJSONSerialization JSONObjectWithData:data options:2 error:&error];
               

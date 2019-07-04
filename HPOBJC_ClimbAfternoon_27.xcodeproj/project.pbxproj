@@ -516,7 +516,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
-				INFOPLIST_FILE = "$(SRCROOT)/HPOBJC_ClimbAfternoon_27UITests/Info.plist";
+				INFOPLIST_FILE = /Users/austinwest/Desktop/DevMountain/iOS27/Day19/RyanClimbNight/HPOBJC27/HPOBJC_ClimbAfternoon_27/RESOURCES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,7 +537,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
-				INFOPLIST_FILE = "$(SRCROOT)/HPOBJC_ClimbAfternoon_27UITests/Info.plist";
+				INFOPLIST_FILE = /Users/austinwest/Desktop/DevMountain/iOS27/Day19/RyanClimbNight/HPOBJC27/HPOBJC_ClimbAfternoon_27/RESOURCES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
