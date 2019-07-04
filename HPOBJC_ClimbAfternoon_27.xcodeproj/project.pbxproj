@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C88D5DA22CE6D3200D989CE /* AJDWCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C88D5D922CE6D3200D989CE /* AJDWCharacter.m */; };
 		6284535822CD5ED6005F5F17 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6284535722CD5ED6005F5F17 /* CharacterViewController.swift */; };
 		6284535B22CD5F22005F5F17 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6284535A22CD5F22005F5F17 /* CharacterTableViewCell.swift */; };
 		62F89C3722CD5D48007CE2C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F89C3622CD5D48007CE2C1 /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C88D5D822CE6D3200D989CE /* AJDWCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJDWCharacter.h; sourceTree = "<group>"; };
+		0C88D5D922CE6D3200D989CE /* AJDWCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJDWCharacter.m; sourceTree = "<group>"; };
 		6284535622CD5ED5005F5F17 /* HPOBJC_ClimbAfternoon_27-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPOBJC_ClimbAfternoon_27-Bridging-Header.h"; sourceTree = "<group>"; };
 		6284535722CD5ED6005F5F17 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		6284535A22CD5F22005F5F17 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,13 +83,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6284535922CD5EDE005F5F17 /* ViewControllers */ = {
+		0C88D5D422CE6BCD00D989CE /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				0C88D5D822CE6D3200D989CE /* AJDWCharacter.h */,
+				0C88D5D922CE6D3200D989CE /* AJDWCharacter.m */,
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		0C88D5D522CE6C1A00D989CE /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				62F89C6822CD5D8F007CE2C1 /* STORYBOARDS */,
+			);
+			path = VIEWS;
+			sourceTree = "<group>";
+		};
+		0C88D5D622CE6C2100D989CE /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				0C88D5D722CE6C3500D989CE /* MODEL CONTROLLERS */,
+				6284535922CD5EDE005F5F17 /* VIEW CONTROLLERS */,
+			);
+			path = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		0C88D5D722CE6C3500D989CE /* MODEL CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MODEL CONTROLLERS";
+			sourceTree = "<group>";
+		};
+		6284535922CD5EDE005F5F17 /* VIEW CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
 				6284535722CD5ED6005F5F17 /* CharacterViewController.swift */,
 				6284535A22CD5F22005F5F17 /* CharacterTableViewCell.swift */,
 			);
-			path = ViewControllers;
+			path = "VIEW CONTROLLERS";
 			sourceTree = "<group>";
 		};
 		62F89C2922CD5D48007CE2C1 = {
@@ -112,9 +148,10 @@
 		62F89C3422CD5D48007CE2C1 /* HPOBJC_ClimbAfternoon_27 */ = {
 			isa = PBXGroup;
 			children = (
-				6284535922CD5EDE005F5F17 /* ViewControllers */,
-				62F89C6822CD5D8F007CE2C1 /* Storyboards */,
-				62F89C6722CD5D64007CE2C1 /* Resources */,
+				0C88D5D422CE6BCD00D989CE /* MODELS */,
+				0C88D5D622CE6C2100D989CE /* CONTROLLERS */,
+				0C88D5D522CE6C1A00D989CE /* VIEWS */,
+				62F89C6722CD5D64007CE2C1 /* RESOURCES */,
 				6284535622CD5ED5005F5F17 /* HPOBJC_ClimbAfternoon_27-Bridging-Header.h */,
 			);
 			path = HPOBJC_ClimbAfternoon_27;
@@ -138,7 +175,7 @@
 			path = HPOBJC_ClimbAfternoon_27UITests;
 			sourceTree = "<group>";
 		};
-		62F89C6722CD5D64007CE2C1 /* Resources */ = {
+		62F89C6722CD5D64007CE2C1 /* RESOURCES */ = {
 			isa = PBXGroup;
 			children = (
 				62F89C3522CD5D48007CE2C1 /* AppDelegate.h */,
@@ -148,15 +185,15 @@
 				62F89C4322CD5D49007CE2C1 /* Info.plist */,
 				62F89C4422CD5D49007CE2C1 /* main.m */,
 			);
-			path = Resources;
+			path = RESOURCES;
 			sourceTree = "<group>";
 		};
-		62F89C6822CD5D8F007CE2C1 /* Storyboards */ = {
+		62F89C6822CD5D8F007CE2C1 /* STORYBOARDS */ = {
 			isa = PBXGroup;
 			children = (
 				62F89C3B22CD5D48007CE2C1 /* Main.storyboard */,
 			);
-			path = Storyboards;
+			path = STORYBOARDS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +258,7 @@
 		62F89C2A22CD5D48007CE2C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AJDW;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "RYAN GREENBURG";
 				TargetAttributes = {
@@ -291,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6284535822CD5ED6005F5F17 /* CharacterViewController.swift in Sources */,
+				0C88D5DA22CE6D3200D989CE /* AJDWCharacter.m in Sources */,
 				62F89C4522CD5D49007CE2C1 /* main.m in Sources */,
 				62F89C3722CD5D48007CE2C1 /* AppDelegate.m in Sources */,
 				6284535B22CD5F22005F5F17 /* CharacterTableViewCell.swift in Sources */,
@@ -466,7 +505,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HPOBJC_ClimbAfternoon_27/Info.plist;
+				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
+				INFOPLIST_FILE = "$(SRCROOT)/HPOBJC_ClimbAfternoon_27UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,7 +526,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HPOBJC_ClimbAfternoon_27/Info.plist;
+				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
+				INFOPLIST_FILE = "$(SRCROOT)/HPOBJC_ClimbAfternoon_27UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
