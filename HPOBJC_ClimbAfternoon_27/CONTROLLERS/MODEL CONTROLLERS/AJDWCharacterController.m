@@ -42,9 +42,9 @@ static NSString * const apiKeyValue = @"$2a$10$yuEVIrB8CTLywFUQlbQnFuLutxdAW7Qt0
     NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:characterURL resolvingAgainstBaseURL:true];
     
     // Add query items to url
-    NSURLQueryItem *apieKey = [[NSURLQueryItem alloc] initWithName:apiKeyValue value:apiKeyValue];
+    NSURLQueryItem *apiKey = [[NSURLQueryItem alloc] initWithName:apiKeyValue value:apiKeyValue];
     
-    urlComponents.queryItems = @[apieKey];
+    urlComponents.queryItems = @[apiKey];
     
     // Final url
     NSURL *finalURL = urlComponents.URL;

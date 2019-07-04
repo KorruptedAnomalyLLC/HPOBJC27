@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C88D5DA22CE6D3200D989CE /* AJDWCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C88D5D922CE6D3200D989CE /* AJDWCharacter.m */; };
 		0C88D5DD22CE765600D989CE /* AJDWCharacterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C88D5DC22CE765600D989CE /* AJDWCharacterController.m */; };
+		0C88D5DF22CE8A9400D989CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C88D5DE22CE8A9400D989CE /* Default-568h@2x.png */; };
 		6284535822CD5ED6005F5F17 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6284535722CD5ED6005F5F17 /* CharacterViewController.swift */; };
 		6284535B22CD5F22005F5F17 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6284535A22CD5F22005F5F17 /* CharacterTableViewCell.swift */; };
 		62F89C3722CD5D48007CE2C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F89C3622CD5D48007CE2C1 /* AppDelegate.m */; };
@@ -42,6 +43,7 @@
 		0C88D5D922CE6D3200D989CE /* AJDWCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJDWCharacter.m; sourceTree = "<group>"; };
 		0C88D5DB22CE765600D989CE /* AJDWCharacterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJDWCharacterController.h; sourceTree = "<group>"; };
 		0C88D5DC22CE765600D989CE /* AJDWCharacterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJDWCharacterController.m; sourceTree = "<group>"; };
+		0C88D5DE22CE8A9400D989CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6284535622CD5ED5005F5F17 /* HPOBJC_ClimbAfternoon_27-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPOBJC_ClimbAfternoon_27-Bridging-Header.h"; sourceTree = "<group>"; };
 		6284535722CD5ED6005F5F17 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		6284535A22CD5F22005F5F17 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		62F89C2922CD5D48007CE2C1 = {
 			isa = PBXGroup;
 			children = (
+				0C88D5DE22CE8A9400D989CE /* Default-568h@2x.png */,
 				62F89C3422CD5D48007CE2C1 /* HPOBJC_ClimbAfternoon_27 */,
 				62F89C4D22CD5D49007CE2C1 /* HPOBJC_ClimbAfternoon_27Tests */,
 				62F89C5822CD5D49007CE2C1 /* HPOBJC_ClimbAfternoon_27UITests */,
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62F89C4222CD5D49007CE2C1 /* LaunchScreen.storyboard in Resources */,
+				0C88D5DF22CE8A9400D989CE /* Default-568h@2x.png in Resources */,
 				62F89C3F22CD5D49007CE2C1 /* Assets.xcassets in Resources */,
 				62F89C3D22CD5D48007CE2C1 /* Main.storyboard in Resources */,
 			);
